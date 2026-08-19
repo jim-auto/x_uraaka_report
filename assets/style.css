@@ -69,6 +69,7 @@ a:hover { color: #fff; }
   grid-template-columns: 1.4fr 0.9fr;
   gap: 28px;
   align-items: start;
+}
 
 .kicker {
   font-family: var(--mono);
