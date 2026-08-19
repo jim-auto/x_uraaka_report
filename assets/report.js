@@ -4,6 +4,41 @@ Chart.defaults.color = muted;
 Chart.defaults.borderColor = grid;
 Chart.defaults.font.family = "'IBM Plex Sans JP', 'Noto Sans JP', sans-serif";
 
+new Chart(document.getElementById("chartLatest"), {
+  type: "bar",
+  data: {
+    labels: [
+      "県名付き量産垢",
+      "薄い裏垢女子名乗り",
+      "業者を嘆く人間",
+      "実在っぽい相互圏の文"
+    ],
+    datasets: [{
+      label: "Latest 先頭付近の見え方",
+      data: [78, 12, 8, 2],
+      backgroundColor: ["#8a3b46", "#c45c6a", "#d4a574", "#7dba8e"]
+    }]
+  },
+  options: {
+    indexAxis: "y",
+    plugins: {
+      legend: { display: false },
+      title: {
+        display: true,
+        text: "2026-08-19「裏垢女子」「オフパコ」Latest の表層",
+        color: "#eadfd9"
+      }
+    },
+    scales: {
+      x: {
+        beginAtZero: true,
+        max: 100,
+        ticks: { callback: (v) => v + "%" }
+      }
+    }
+  }
+});
+
 new Chart(document.getElementById("chartSurface"), {
   type: "doughnut",
   data: {
