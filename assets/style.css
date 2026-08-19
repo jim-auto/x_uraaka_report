@@ -237,8 +237,25 @@ footer {
   margin: 16px 0;
 }
 
+.matrix {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 16px 0;
+}
+.matrix .card h3 { font-size: 16px; }
+.matrix .axis { color: var(--gold); font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em; }
+.tweet {
+  border-left: 3px solid var(--line);
+  padding: 8px 12px;
+  margin: 10px 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+.tweet b { color: var(--accent-2); font-weight: 500; }
+
 @media (max-width: 860px) {
-  .hero, .grid-2, .grid-3, .risk { grid-template-columns: 1fr; }
+  .hero, .grid-2, .grid-3, .risk, .matrix { grid-template-columns: 1fr; }
   .nav { display: none; }
   .hero { padding-top: 36px; }
 }

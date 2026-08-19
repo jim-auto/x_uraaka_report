@@ -4,6 +4,37 @@ Chart.defaults.color = muted;
 Chart.defaults.borderColor = grid;
 Chart.defaults.font.family = "'IBM Plex Sans JP', 'Noto Sans JP', sans-serif";
 
+new Chart(document.getElementById("chartSplit"), {
+  type: "bar",
+  data: {
+    labels: ["15万 販売", "6万 自撮り店", "3.7万 DMM", "5千 日記+Fantia", "3千 テキスト", "1.2千 量産出会い"],
+    datasets: [
+      {
+        label: "直近ヒットの表示数",
+        data: [75364, 40842, 4773, 7164, 737, 6],
+        backgroundColor: ["#d4a574", "#e8c4a8", "#c45c6a", "#7dba8e", "#7d6b66", "#8a3b46"]
+      }
+    ]
+  },
+  options: {
+    indexAxis: "y",
+    plugins: {
+      legend: { display: false },
+      title: {
+        display: true,
+        text: "フォロワー帯ごとの、典型ポスト表示数",
+        color: "#eadfd9"
+      }
+    },
+    scales: {
+      x: {
+        beginAtZero: true,
+        ticks: { callback: (v) => v >= 10000 ? (v / 10000) + "万" : v }
+      }
+    }
+  }
+});
+
 new Chart(document.getElementById("chartLatest"), {
   type: "bar",
   data: {
