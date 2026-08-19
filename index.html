@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Xの裏垢事情レポート — アダルト圏の生態</title>
+  <meta name="description" content="X（旧Twitter）の裏垢を、趣味のサブ垢ではなくアダルト／関係目的のアカウント圏として整理した調査レポート。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Shippori+Mincho:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">X URAAKA FIELD NOTES / 2026</div>
+      <nav class="nav">
+        <a href="#define">定義</a>
+        <a href="#map">生態系</a>
+        <a href="#players">分類</a>
+        <a href="#surface">表層</a>
+        <a href="#platform">X側</a>
+        <a href="#risk">リスク</a>
+        <a href="#sources">出典</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div>
+        <div class="kicker">Field report · Adult alt-accounts on X</div>
+        <h1>Xの裏垢事情</h1>
+        <p class="lede">
+          ここでいう裏垢は、愚痴用や趣味用のサブ垢ではない。
+          本垢から切り離して運用する、<strong>性的な投稿・閲覧・関係</strong>のためのアカウント圏である。
+          検索に出てくる表層は業者と量産アカが多く、実在の当事者はもっと奥にいる。
+        </p>
+        <div class="meta">
+          <span>公開: 2026-08-19</span>
+          <span>対象: X（旧Twitter）日本語圏</span>
+          <span>形式: 公開情報の整理＋図解</span>
+        </div>
+      </div>
+      <aside class="hero-card">
+        <h2>最初に押さえる数字</h2>
+        <div class="stat-grid">
+          <div class="stat"><b>約13%</b><span>2022年時点、X投稿のアダルト比率（旧Twitter内部文書）</span></div>
+          <div class="stat"><b>2024.6</b><span>合意に基づく成人向け投稿を公式に許容</span></div>
+          <div class="stat"><b>0 / 68</b><span>「オフパコ募集」へDMした実験での無償成立</span></div>
+          <div class="stat"><b>検索≠現場</b><span>表に出る募集と、実在ユーザーの動線は別物</span></div>
+        </div>
+      </aside>
+    </section>
+
+    <div class="notice">
+      18歳未満は対象外。このページは出会いの手順書ではなく、公開情報に基づく社会観察である。
+      性的サービスの勧誘、児童の性的搾取、合意のない画像はXでも法律でも禁止されている。
+    </div>
+
+    <section id="define">
+      <h2>1. 定義をずらすと全部ずれる</h2>
+      <p>
+        ニュースやマーケティング調査の「裏アカ」は、知人に教えていないサブアカウント全般を指すことが多い。
+        10代女性の複数アカウント保有、大学生の約半数が裏垢、といった数字はだいたいこの広い定義である。
+      </p>
+      <p>
+        Xの現場語としての裏垢はもっと狭い。<strong>エロい自分を置く場所</strong>だ。
+        露出、性癖の開示、オフパコ、婚外、個撮、オナニー用タイムライン。
+        本垢では出せない性的ペルソナを、別アカウントに隔離する。
+      </p>
+
+      <div class="grid-2">
+        <article class="card">
+          <div class="tag">調査会社の定義</div>
+          <h3>広い「裏アカ」</h3>
+          <p>知人に知らせないアカウント。趣味、閲覧、愚痴、推し活も含む。STRATE（2021）では10–20代の約半数が所持、女性62.7% / 男性40.7%。</p>
+        </article>
+        <article class="card">
+          <div class="tag">X現場の定義</div>
+          <h3>狭い「裏垢」</h3>
+          <p>性的コンテンツか性的関係のための垢。プロフに「裏垢」「オフパコ」「人妻」などが並び、TLは性的投稿で埋まる。本レポートの対象はこちら。</p>
+        </article>
+      </div>
+
+      <div class="callout">
+        同じ「裏垢」という言葉が、保護者向け記事では「本音の逃げ場」、アダルト圏では「会えるかもしれないエロアカウント」を指す。
+        数字を読むときは、どちらの定義かを先に見る必要がある。
+      </div>
+    </section>
+
+    <section id="map">
+      <h2>2. 生態系</h2>
+      <p>
+        裏垢圏はマッチングアプリというより、ポルノ消費、承認経済、アフィリエイト、実在の欲求が重なったグレー市場である。
+        下図は、本垢から切り離されたあとに何が起きているかの見取り図だ。
+      </p>
+
+      <div class="diagram" aria-label="裏垢生態系図">
+        <svg viewBox="0 0 980 420" role="img">
+          <rect x="30" y="160" width="150" height="80" rx="10" fill="#23191c" stroke="#d4a574"/>
+          <text x="105" y="195" text-anchor="middle" fill="#e8c4a8" font-size="16">本垢</text>
+          <text x="105" y="218" text-anchor="middle" fill="#b8a49c" font-size="12">建前・実名圏</text>
+
+          <line x1="180" y1="200" x2="250" y2="200" stroke="#c45c6a" stroke-width="2"/>
+          <polygon points="250,194 264,200 250,206" fill="#c45c6a"/>
+
+          <rect x="264" y="148" width="180" height="104" rx="10" fill="#2a171b" stroke="#c45c6a"/>
+          <text x="354" y="185" text-anchor="middle" fill="#f4ece8" font-size="16">裏垢</text>
+          <text x="354" y="208" text-anchor="middle" fill="#b8a49c" font-size="12">性的ペルソナの隔離</text>
+          <text x="354" y="228" text-anchor="middle" fill="#7d6b66" font-size="11">顔出し抑制 / DM前提</text>
+
+          <line x1="444" y1="170" x2="530" y2="70" stroke="#7d6b66"/>
+          <line x1="444" y1="190" x2="530" y2="170" stroke="#7d6b66"/>
+          <line x1="444" y1="210" x2="530" y2="270" stroke="#7d6b66"/>
+          <line x1="444" y1="230" x2="530" y2="360" stroke="#7d6b66"/>
+
+          <rect x="530" y="30" width="410" height="70" rx="10" fill="#1c1718" stroke="#3a2c30"/>
+          <text x="550" y="58" fill="#e8c4a8" font-size="15">閲覧・オナ専</text>
+          <text x="550" y="80" fill="#b8a49c" font-size="12">TLを性癖で満たす。会わない。裏垢圏の最大層。</text>
+
+          <rect x="530" y="130" width="410" height="70" rx="10" fill="#1c1718" stroke="#3a2c30"/>
+          <text x="550" y="158" fill="#e8c4a8" font-size="15">露出・承認</text>
+          <text x="550" y="180" fill="#b8a49c" font-size="12">自撮りや体験談で反応を取る。関係は必須ではない。</text>
+
+          <rect x="530" y="230" width="410" height="70" rx="10" fill="#1c1718" stroke="#3a2c30"/>
+          <text x="550" y="258" fill="#e8c4a8" font-size="15">関係・オフ</text>
+          <text x="550" y="280" fill="#b8a49c" font-size="12">実在ユーザー同士のDM。表層検索より相互フォロー圏。</text>
+
+          <rect x="530" y="330" width="410" height="70" rx="10" fill="#2a171b" stroke="#8a3b46"/>
+          <text x="550" y="358" fill="#e06b6b" font-size="15">商業化レイヤ</text>
+          <text x="550" y="380" fill="#b8a49c" font-size="12">アフィ、援デリ、先払い詐欺、量産ボット。</text>
+        </svg>
+      </div>
+      <p class="small">図: 本垢から隔離された性的ペルソナが、閲覧・露出・関係・商業の4層に分かれる。</p>
+    </section>
+
+    <section id="players">
+      <h2>3. 誰がいるか</h2>
+      <p>
+        アカウント名に「裏垢」と書いてあるだけでは、同じ種類ではない。
+        現場では少なくとも次の役者が同時に動いている。
+      </p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>役者</th>
+              <th>表向きの姿</th>
+              <th>実際に起きていること</th>
+              <th>見分けの手がかり</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>実在の成人ユーザー</td>
+              <td>欲求、婚外、性癖開示</td>
+              <td>限定的な相互フォローと長いDM</td>
+              <td>投稿にムラがある。業者文句を避ける。顔は出さない</td>
+            </tr>
+            <tr>
+              <td>オナ専・閲覧専</td>
+              <td>裏垢男子／裏垢女子</td>
+              <td>見るだけで会わない。TLをカスタムポルノ化する</td>
+              <td>フォローがエロ垢ばかり。発信は薄い</td>
+            </tr>
+            <tr>
+              <td>個撮・販売</td>
+              <td>素人投稿</td>
+              <td>Fantia / FANZA / 直販への導線</td>
+              <td>固定ポストが通販。会う話は後景</td>
+            </tr>
+            <tr>
+              <td>アフィ垢</td>
+              <td>今すぐ会える素人</td>
+              <td>出会い系登録で報酬</td>
+              <td>地域名＋オフパコ。定型文。リンク過多</td>
+            </tr>
+            <tr>
+              <td>援デリ／業者</td>
+              <td>セフレ募集の素人</td>
+              <td>有料の性的サービスへ誘導</td>
+              <td>すぐLINE。料金。写真がストック美女</td>
+            </tr>
+            <tr>
+              <td>詐欺</td>
+              <td>会える前提の交渉</td>
+              <td>先払い、なりすまし、音信不通</td>
+              <td>会う前の送金。同一文面の複数垢</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>裏垢男子の四分類</h3>
+      <p class="muted">X上で広く共有された現場分類（2025年、約3.6万表示の投稿）を整理したもの。</p>
+      <div class="grid-2">
+        <article class="card">
+          <h3>1. オフだけする層</h3>
+          <p>関係そのものが目的。検索の表層より、既存の相互圏や長い会話の先にいる。</p>
+        </article>
+        <article class="card">
+          <h3>2. オフ＋個撮の層</h3>
+          <p>会うこと自体をコンテンツ化する。同意と肖像の扱いがすぐ法的問題になる。</p>
+        </article>
+        <article class="card">
+          <h3>3. オナ専</h3>
+          <p>オフするつもりで始めたが、TLの動画で完結する。人数としては厚い。</p>
+        </article>
+        <article class="card">
+          <h3>4. エアプ／アフィ</h3>
+          <p>オフしまくっている体裁で、実際は性癖マッチングや出会い系へ流す。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="surface">
+      <h2>4. 検索に出る裏垢は、裏垢圏そのものではない</h2>
+      <p>
+        「#オフパコ」「裏垢女子 東京」で出てくるタイムラインを、市場の全体だと思うと誤読する。
+        見える場所は広告枠に近い。見えない場所に、実在ユーザーの相互フォロー圏がある。
+      </p>
+
+      <div class="grid-2">
+        <div class="chart-box">
+          <canvas id="chartSurface"></canvas>
+        </div>
+        <div class="chart-box">
+          <canvas id="chartMotives"></canvas>
+        </div>
+      </div>
+      <p class="small">
+        左図は公式統計ではなく、業者比率に関する複数の現場言説と、閲覧用途の厚さを踏まえたイメージ図。
+        右図も公開調査を一本化した数値ではなく、動機の重心を比較するための合成スコアである。
+      </p>
+
+      <h3>68人DM実験が示していること</h3>
+      <p>
+        アダルト系ブログ「らぶたっくる」は、裏垢女子68人にオフパコ前提のDMを送り、成立0件だったと報告している。
+        返信の大半は業者・勧誘リンクで、援助交際と先払いも混ざっていた。サンプルは小さく、発信元にもアフィがある。
+        それでも「募集と書いてある垢にいきなりDMしても、無償の関係にはならない」という点では、他の現場言説と一致する。
+      </p>
+      <div class="chart-box">
+        <canvas id="chartDm"></canvas>
+      </div>
+
+      <div class="callout">
+        アルゴリズムの罠もある。業者垢といいねやDMで絡むと、おすすめも業者で埋まる。
+        「会えないのは自分の魅力のせい」ではなく、最初から商業クラスタに吸い込まれている、という説明がX上でも共有されている。
+      </div>
+    </section>
+
+    <section>
+      <h2>5. なぜXなのか</h2>
+      <div class="grid-3">
+        <article class="card">
+          <div class="tag">匿名</div>
+          <h3>本垢と切れる</h3>
+          <p>実名圏から性的ペルソナを隔離できる。顔なし運用が標準で、身バレ耐性が他SNSより高い。</p>
+        </article>
+        <article class="card">
+          <div class="tag">検索</div>
+          <h3>性癖で見つかる</h3>
+          <p>テキストとハッシュタグでニッチな性癖クラスタが作れる。画像SNSより言語で集まる。</p>
+        </article>
+        <article class="card">
+          <div class="tag">導線</div>
+          <h3>DMがある</h3>
+          <p>公開投稿は餌、本題はDM。マッチングアプリのスワイプより、タイムライン消費から入れる。</p>
+        </article>
+      </div>
+      <p>
+        ハッピーメールの成人女性100人調査（2025）でも、裏垢を持つ34人のうち29人がXで持っていた。
+        定義は広いが、「文章で呟けて、おすすめが特化しやすい」ことが理由として挙がっている。
+        アダルト用途でも同じことが起きる。垢を分けるほど、TLが性的コンテンツで飽和する。
+      </p>
+    </section>
+
+    <section id="platform">
+      <h2>6. プラットフォームは「置いてよい、広げない」</h2>
+      <p>
+        旧Twitter時代、アダルトは黙認に近かった。ロイターが報じた内部文書では、2022年時点で投稿の約13%にアダルトが含まれていた。
+        2024年6月、Xは成人向けコンテンツ政策を明示し、<strong>合意に基づく成人の性的コンテンツ</strong>をラベル付きで認めると発表した。
+      </p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>できること</th><th>できないこと</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>合意のある成人向け画像・文章の投稿（センシティブ表示）</td>
+              <td>プロフィール画像・ヘッダー・コミュニティカバーへの露出</td>
+            </tr>
+            <tr>
+              <td>18歳以上で設定したユーザーへの表示</td>
+              <td>性的サービスの宣伝・勧誘</td>
+            </tr>
+            <tr>
+              <td>AI生成の成人向けも、合意ルールの対象</td>
+              <td>合意のない裸体、児童の性的搾取、性的暴力</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        同時に、おすすめと検索からの脱落は強まっている。
+        収益化条件の引き上げ、NSFWラベル、直近投稿の連発判定などで、半端なエロ売り垢は伸びにくくなった、という観測が2026年時点のTLにもある。
+      </p>
+      <div class="chart-box">
+        <canvas id="chartPolicy"></canvas>
+      </div>
+      <p class="small">図は政策文書と運用観測を重ねた概念図。縦軸は相対的な「置きやすさ／広がりやすさ」であり、公式KPIではない。</p>
+    </section>
+
+    <section id="risk">
+      <h2>7. リスク</h2>
+      <div class="risk">
+        <article class="card">
+          <strong>身バレ</strong>
+          <p>誕生日、出身校、昔の相互、声、背景の部屋。就職用の裏アカ調査会社は、キーワードと友人関係から約9割を特定できると説明している。アダルト垢でも同じ穴がある。</p>
+        </article>
+        <article class="card">
+          <strong>金銭・詐欺</strong>
+          <p>先払い、援デリへのすり替え、同一文面の量産垢。検索で拾える「今すぐ会える」は、ほぼこの層。</p>
+        </article>
+        <article class="card">
+          <strong>凍結と拡散制限</strong>
+          <p>ラベルなし投稿、アイコンの露出、性的サービスの勧誘は削除・凍結対象。生き残ってもおすすめから落ちる。</p>
+        </article>
+        <article class="card">
+          <strong>法律</strong>
+          <p>対価のある性交渉、18歳未満、盗撮・不同意撮影、リベンジポルノは犯罪。SNS上の「素人同士」という体裁は、違法性を消さない。</p>
+        </article>
+      </div>
+
+      <h3>法律の位置</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>行為</th><th>問題になる法令の例</th><th>現場での誤解</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>対価と引き換えの性交</td>
+              <td>売春防止法など</td>
+              <td>「パパ活」「お礼」と言い換えればよい</td>
+            </tr>
+            <tr>
+              <td>18歳未満との性的なやり取り</td>
+              <td>児童買春・児童ポルノ禁止法など</td>
+              <td>「裏垢だから年齢は分からない」</td>
+            </tr>
+            <tr>
+              <td>合意のない撮影・流出</td>
+              <td>不同意撮影、私事性的画像記録被害防止法</td>
+              <td>「会ったのだから撮ってよい」</td>
+            </tr>
+            <tr>
+              <td>性的サービスの勧誘投稿</td>
+              <td>X規約。場合により風営法・条例</td>
+              <td>「センシティブ設定すれば営業してよい」</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>8. いま起きていること</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>時期</th><th>変化</th><th>裏垢圏への影響</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2021–22</td>
+              <td>複数アカウントが若年層で一般化</td>
+              <td>「裏」を持つこと自体の心理的ハードルが下がる</td>
+            </tr>
+            <tr>
+              <td>2022</td>
+              <td>内部文書でアダルト比率約13%</td>
+              <td>黙認の巨大ポルノ圏として既に定着</td>
+            </tr>
+            <tr>
+              <td>2023–24</td>
+              <td>就活の裏アカ調査が報道される</td>
+              <td>本垢と裏垢の切断がより意識される</td>
+            </tr>
+            <tr>
+              <td>2024.6</td>
+              <td>成人向け政策の明文化</td>
+              <td>合意ある成人向けは置ける。勧誘と露出アイコンは不可</td>
+            </tr>
+            <tr>
+              <td>2025–26</td>
+              <td>おすすめ制限と収益化の難化</td>
+              <td>表層のエロ売りが痩せ、業者と濃いクラスタが残る</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>9. 要約</h2>
+      <div class="grid-2">
+        <article class="card">
+          <h3>言えること</h3>
+          <p>
+            Xの裏垢は、日本語圏ではアダルト用途の隠語として定着している。
+            最大の用途は出会いではなく、性的タイムラインの構築と承認である。
+            プラットフォームは置くことを認め、広げることを絞っている。
+          </p>
+        </article>
+        <article class="card">
+          <h3>言えないこと</h3>
+          <p>
+            実在ユーザーの正確な人数、成功率、地域差は公開統計がない。
+            「99%業者」も「137人とホテル直行」も、検証可能な母集団調査ではない。
+            表層の宣伝と、相互フォロー圏の実態は分けて読む必要がある。
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="sources">
+      <h2>出典と注</h2>
+      <ul class="sources">
+        <li>X Help, “成人向けコンテンツに関するポリシー” — <a href="https://help.x.com/ja/rules-and-policies/adult-content">help.x.com</a></li>
+        <li>GIGAZINE, “Xがアダルトコンテンツを許可するポリシーを発表”, 2024-06-04. 旧Twitter内部文書のアダルト比率約13%（Reuters）を引用。</li>
+        <li>TechCrunch / The Verge, 2024-06-03. X adult content policy.</li>
+        <li>STRATE / SheepDog, “SNSの裏アカに関するアンケート”, 2021-11-26. 15–29歳300人。</li>
+        <li>ハッピーメール / アイベック, “裏垢女子に関するアンケート”, 2025-02. 成人女性100人。X保有29/34。</li>
+        <li>らぶたっくる, “Twitter裏垢女子にDM！68人にDM送った結果”, 2023. 逸話的実験。アフィリエイト記事。</li>
+        <li>オトナのハウコレ, “Twitterの裏垢女子ってどんな女の子？”, 2022-06-06. 業者特徴の整理。PR記事。</li>
+        <li>東海テレビ / 企業調査センター取材, 2023-01-22. 裏アカ特定率「約9割」、調査費用1人1万6500円〜。</li>
+        <li>日本経済新聞, “就活生のSNS『裏アカウント』、増える調査依頼”, 2023-11-27.</li>
+        <li>X投稿 @ochikemono, 2025-11-08. 裏垢男子四分類。36,801表示。</li>
+        <li>X投稿 @minami_nichijo, 2024-10-15. 業者クラスタとおすすめの自己強化。</li>
+      </ul>
+      <p class="footnote">
+        アダルト圏の一次統計はほぼ存在しない。本レポートは政策文書、報道、小規模アンケート、現場の観察投稿を重ねて構造を描いた。
+        図表の一部は「正確なシェア」ではなく、読み手のための見取り図である。
+      </p>
+    </section>
+
+    <footer>
+      作成: 2026-08-19 / リポジトリ: jim-auto/x_uraaka_report / GitHub Pages 公開用の静的レポート
+    </footer>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+  <script src="assets/report.js"></script>
+</body>
+</html>

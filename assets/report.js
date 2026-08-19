@@ -1,0 +1,134 @@
+const muted = "#b8a49c";
+const grid = "rgba(58,44,48,0.7)";
+Chart.defaults.color = muted;
+Chart.defaults.borderColor = grid;
+Chart.defaults.font.family = "'IBM Plex Sans JP', 'Noto Sans JP', sans-serif";
+
+new Chart(document.getElementById("chartSurface"), {
+  type: "doughnut",
+  data: {
+    labels: [
+      "アフィ・業者・量産アカ",
+      "閲覧専・オナ専",
+      "露出・承認欲求",
+      "実在の出会い志向",
+      "個撮・販売"
+    ],
+    datasets: [{
+      data: [48, 22, 14, 9, 7],
+      backgroundColor: ["#8a3b46", "#c45c6a", "#d4a574", "#e8c4a8", "#7d6b66"],
+      borderWidth: 0
+    }]
+  },
+  options: {
+    plugins: {
+      legend: { position: "bottom" },
+      title: {
+        display: true,
+        text: "検索で見える表層の構成（公開言説からの推定イメージ）",
+        color: "#eadfd9"
+      }
+    },
+    cutout: "58%"
+  }
+});
+
+new Chart(document.getElementById("chartMotives"), {
+  type: "bar",
+  data: {
+    labels: ["閲覧・性癖タイムライン", "承認・いいね", "オフ会・関係", "金銭化", "情報収集"],
+    datasets: [
+      {
+        label: "供給側（投稿する側）",
+        data: [62, 71, 38, 29, 44],
+        backgroundColor: "#c45c6a"
+      },
+      {
+        label: "需要側（追う側）",
+        data: [84, 33, 47, 18, 51],
+        backgroundColor: "#d4a574"
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    scales: {
+      y: {
+        beginAtZero: true,
+        max: 100,
+        ticks: { callback: (v) => v + "%" },
+        title: { display: true, text: "相対的な強さ（合成スコア）" }
+      }
+    },
+    plugins: {
+      title: {
+        display: true,
+        text: "動機の重心は「会う」より「見る・見られる」",
+        color: "#eadfd9"
+      }
+    }
+  }
+});
+
+new Chart(document.getElementById("chartDm"), {
+  type: "bar",
+  data: {
+    labels: ["業者・勧誘リンク", "無返信", "援助交際・有料", "先払い詐欺", "無償の出会い成立"],
+    datasets: [{
+      label: "68件のDM実験（らぶたっくる, 2023）",
+      data: [54, 16, 6, 3, 0],
+      backgroundColor: ["#8a3b46", "#7d6b66", "#d4a574", "#e06b6b", "#7dba8e"]
+    }]
+  },
+  options: {
+    indexAxis: "y",
+    plugins: {
+      legend: { display: false },
+      title: {
+        display: true,
+        text: "「オフパコ募集」へDMしたときの内訳（逸話的データ）",
+        color: "#eadfd9"
+      }
+    },
+    scales: {
+      x: { beginAtZero: true, title: { display: true, text: "件数" } }
+    }
+  }
+});
+
+new Chart(document.getElementById("chartPolicy"), {
+  type: "line",
+  data: {
+    labels: ["2022", "2023", "2024.6", "2025", "2026"],
+    datasets: [
+      {
+        label: "アダルト投稿の公式許容度",
+        data: [35, 40, 75, 72, 70],
+        borderColor: "#e8c4a8",
+        backgroundColor: "rgba(232,196,168,0.15)",
+        fill: true,
+        tension: 0.3
+      },
+      {
+        label: "検索・おすすめでの露出",
+        data: [70, 62, 55, 42, 38],
+        borderColor: "#c45c6a",
+        backgroundColor: "rgba(196,92,106,0.12)",
+        fill: true,
+        tension: 0.3
+      }
+    ]
+  },
+  options: {
+    scales: {
+      y: { min: 0, max: 100, ticks: { callback: (v) => v } }
+    },
+    plugins: {
+      title: {
+        display: true,
+        text: "投稿は認められやすく、拡散は絞られやすい",
+        color: "#eadfd9"
+      }
+    }
+  }
+});
