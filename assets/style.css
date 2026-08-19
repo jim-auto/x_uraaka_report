@@ -64,7 +64,7 @@ a:hover { color: #fff; }
 .nav a:hover { color: var(--ink); }
 
 .hero {
-  padding: 72px 0 36px;
+  padding: 40px 0 20px;
   display: grid;
   grid-template-columns: 1.4fr 0.9fr;
   gap: 28px;
@@ -80,12 +80,12 @@ a:hover { color: #fff; }
 }
 h1 {
   font-family: var(--serif);
-  font-size: clamp(36px, 6vw, 64px);
+  font-size: clamp(32px, 5vw, 48px);
   line-height: 1.15;
-  margin: 10px 0 16px;
+  margin: 8px 0 12px;
   font-weight: 600;
 }
-.lede { font-size: 18px; color: var(--muted); max-width: 42em; }
+.lede { font-size: 16px; color: var(--muted); max-width: 36em; }
 .meta {
   display: flex;
   gap: 18px;
@@ -143,10 +143,10 @@ h1 {
 section { padding: 18px 0 10px; }
 h2 {
   font-family: var(--serif);
-  font-size: 30px;
-  margin: 42px 0 14px;
+  font-size: 22px;
+  margin: 28px 0 10px;
   border-bottom: 1px solid var(--line);
-  padding-bottom: 10px;
+  padding-bottom: 8px;
 }
 h3 { font-size: 20px; margin: 28px 0 10px; color: var(--accent-2); }
 p { color: #eadfd9; }
@@ -206,7 +206,7 @@ tr:last-child td { border-bottom: none; }
   border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 16px 16px 8px;
-  min-height: 320px;
+  min-height: 260px;
 }
 .chart-box canvas { width: 100% !important; }
 
