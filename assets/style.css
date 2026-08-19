@@ -241,6 +241,8 @@ footer {
   padding: 16px 18px;
   margin: 16px 0;
 }
+.callout ol { margin: 10px 0 0; padding-left: 1.2em; }
+.callout li { margin: 6px 0; color: #eadfd9; }
 
 .matrix {
   display: grid;
