@@ -74,6 +74,60 @@ new Chart(document.getElementById("chartComm"), {
   }
 });
 
+new Chart(document.getElementById("chartExitSell"), {
+  type: "doughnut",
+  data: {
+    labels: [
+      "myfans直リンク 9",
+      "X内 10",
+      "流出DM 8",
+      "Fantia拡散 7",
+      "閲覧→myfans 6",
+      "自前ファンサイト 5",
+      "pont 3",
+      "その他 2"
+    ],
+    datasets: [{
+      data: [9, 10, 8, 7, 6, 5, 3, 2],
+      backgroundColor: ["#8a3b46", "#7d6b66", "#c45c6a", "#d4a574", "#e8c4a8", "#7dba8e", "#3a2c30", "#24191c"],
+      borderWidth: 0
+    }]
+  },
+  options: {
+    plugins: {
+      legend: { position: "bottom" },
+      title: { display: true, text: "販売窓50の飛び先", color: "#eadfd9" }
+    },
+    cutout: "50%"
+  }
+});
+
+new Chart(document.getElementById("chartExitMeet"), {
+  type: "doughnut",
+  data: {
+    labels: [
+      "DM（量産・需要）26",
+      "LINE 9",
+      "X内・ノイズ 5",
+      "固ツイ/DM（非工場）7",
+      "note 2",
+      "PayPay 1"
+    ],
+    datasets: [{
+      data: [26, 9, 5, 7, 2, 1],
+      backgroundColor: ["#8a3b46", "#c45c6a", "#7d6b66", "#7dba8e", "#d4a574", "#e8c4a8"],
+      borderWidth: 0
+    }]
+  },
+  options: {
+    plugins: {
+      legend: { position: "bottom" },
+      title: { display: true, text: "出会い窓50の飛び先", color: "#eadfd9" }
+    },
+    cutout: "50%"
+  }
+});
+
 new Chart(document.getElementById("chartSplit"), {
   type: "bar",
   data: {
