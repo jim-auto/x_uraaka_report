@@ -22,7 +22,7 @@ if (el("chartSplit")) {
       indexAxis: "y",
       plugins: {
         legend: { display: false },
-        title: { display: true, text: "典型ポストの表示数", color: "#eadfd9" }
+        title: { display: true, text: "フォロワー規模ごとの、よくある投稿の表示回数", color: "#eadfd9" }
       },
       scales: {
         x: { beginAtZero: true, ticks: { callback: (v) => v >= 10000 ? (v / 10000) + "万" : v } }
@@ -45,7 +45,7 @@ if (el("chartSell50")) {
     options: {
       plugins: {
         legend: { position: "bottom" },
-        title: { display: true, text: "販売 50", color: "#eadfd9" }
+        title: { display: true, text: "動画関連の検索 50件", color: "#eadfd9" }
       },
       cutout: "52%"
     }
@@ -66,7 +66,7 @@ if (el("chartMeet50")) {
     options: {
       plugins: {
         legend: { position: "bottom" },
-        title: { display: true, text: "出会い 50", color: "#eadfd9" }
+        title: { display: true, text: "出会い関連の検索 50件", color: "#eadfd9" }
       },
       cutout: "52%"
     }
@@ -87,7 +87,7 @@ if (el("chartComm")) {
       indexAxis: "y",
       plugins: {
         legend: { display: false },
-        title: { display: true, text: "コミュ Top", color: "#eadfd9" }
+        title: { display: true, text: "コミュニティの人気投稿", color: "#eadfd9" }
       },
       scales: { x: { beginAtZero: true } }
     }
@@ -108,7 +108,7 @@ if (el("chartExitSell")) {
     options: {
       plugins: {
         legend: { position: "bottom" },
-        title: { display: true, text: "販売の飛び先", color: "#eadfd9" }
+        title: { display: true, text: "動画関連50件のリンク先", color: "#eadfd9" }
       },
       cutout: "50%"
     }
@@ -129,7 +129,7 @@ if (el("chartExitMeet")) {
     options: {
       plugins: {
         legend: { position: "bottom" },
-        title: { display: true, text: "出会いの飛び先", color: "#eadfd9" }
+        title: { display: true, text: "出会い関連50件のリンク先", color: "#eadfd9" }
       },
       cutout: "50%"
     }

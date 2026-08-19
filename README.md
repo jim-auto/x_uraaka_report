@@ -1,7 +1,5 @@
 # Xの裏垢事情レポート
 
-X（旧Twitter）の裏垢を、趣味のサブ垢ではなく **アダルト／関係目的のアカウント圏** として整理した静的レポートです。
+Xの裏垢（性的な投稿や出会い用の別アカウント）を、動画販売と出会いに分けて整理したページです。
 
-公開先: https://jim-auto.github.io/x_uraaka_report/
-
-2026-08-19 に X 本体を Latest / Top / 意味検索した観測を含む。出会いの手順書ではない。
+公開: https://jim-auto.github.io/x_uraaka_report/
