@@ -4,6 +4,44 @@ Chart.defaults.color = muted;
 Chart.defaults.borderColor = grid;
 Chart.defaults.font.family = "'IBM Plex Sans JP', 'Noto Sans JP', sans-serif";
 
+new Chart(document.getElementById("chartSell50"), {
+  type: "doughnut",
+  data: {
+    labels: ["流出・ボット 17", "ノウハウ 8", "ファン拡散 7", "閲覧・購入 6", "自前店 5", "その他 7"],
+    datasets: [{
+      data: [17, 8, 7, 6, 5, 7],
+      backgroundColor: ["#8a3b46", "#d4a574", "#7d6b66", "#e8c4a8", "#7dba8e", "#3a2c30"],
+      borderWidth: 0
+    }]
+  },
+  options: {
+    plugins: {
+      legend: { position: "bottom" },
+      title: { display: true, text: "販売窓 50件", color: "#eadfd9" }
+    },
+    cutout: "52%"
+  }
+});
+
+new Chart(document.getElementById("chartMeet50"), {
+  type: "doughnut",
+  data: {
+    labels: ["量産工場 15", "需要側 11", "LINE誘導 9", "非工場の会える 7", "ノイズ 5", "その他 3"],
+    datasets: [{
+      data: [15, 11, 9, 7, 5, 3],
+      backgroundColor: ["#8a3b46", "#d4a574", "#c45c6a", "#7dba8e", "#7d6b66", "#3a2c30"],
+      borderWidth: 0
+    }]
+  },
+  options: {
+    plugins: {
+      legend: { position: "bottom" },
+      title: { display: true, text: "出会い窓 50件", color: "#eadfd9" }
+    },
+    cutout: "52%"
+  }
+});
+
 new Chart(document.getElementById("chartSplit"), {
   type: "bar",
   data: {
