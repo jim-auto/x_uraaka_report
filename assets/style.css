@@ -370,6 +370,22 @@ footer {
 }
 .badge em { display: block; font-style: normal; color: var(--gold); font-size: 11px; font-family: var(--mono); margin-bottom: 4px; }
 
+.tiers { display: grid; gap: 8px; margin: 16px 0; }
+.tier {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px 14px;
+  background: var(--bg-card);
+}
+.tier b { display: block; color: var(--accent-2); }
+.tier span { font-family: var(--mono); font-size: 12px; color: var(--gold); }
+.tier p { margin: 6px 0 0; color: var(--muted); font-size: 14px; }
+.t1 { border-left: 4px solid #5a5050; }
+.t2 { border-left: 4px solid #8a3b46; }
+.t3 { border-left: 4px solid #d4a574; }
+.t4 { border-left: 4px solid #e8c4a8; }
+.t5 { border-left: 4px solid #7dba8e; }
+
 @media (max-width: 860px) {
   .hero, .grid-2, .grid-3, .risk, .matrix, .pair { grid-template-columns: 1fr; }
   .nav { display: none; }
