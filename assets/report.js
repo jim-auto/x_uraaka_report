@@ -42,6 +42,38 @@ new Chart(document.getElementById("chartMeet50"), {
   }
 });
 
+new Chart(document.getElementById("chartComm"), {
+  type: "bar",
+  data: {
+    labels: [
+      "アプリ体験談アフィ",
+      "奢り・ヒモ活量産",
+      "同一文の見せ合い量産",
+      "少数垢の見せ合い連打",
+      "需要側の会える募集"
+    ],
+    datasets: [{
+      label: "5コミュニティの Top で見えた主食",
+      data: [11, 10, 6, 11, 4],
+      backgroundColor: ["#8a3b46", "#c45c6a", "#d4a574", "#e8c4a8", "#7dba8e"]
+    }]
+  },
+  options: {
+    indexAxis: "y",
+    plugins: {
+      legend: { display: false },
+      title: {
+        display: true,
+        text: "コミュニティ Top の見え方（5箱・ログインなし）",
+        color: "#eadfd9"
+      }
+    },
+    scales: {
+      x: { beginAtZero: true, title: { display: true, text: "見えた件数の目安" } }
+    }
+  }
+});
+
 new Chart(document.getElementById("chartSplit"), {
   type: "bar",
   data: {
