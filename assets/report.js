@@ -39,6 +39,41 @@ new Chart(document.getElementById("chartLatest"), {
   }
 });
 
+new Chart(document.getElementById("chartUsers"), {
+  type: "bar",
+  data: {
+    labels: [
+      "販売・ハブ 3万+",
+      "図鑑・クラブ",
+      "日記型 1千〜5千",
+      "量産垢 300〜2千",
+      "需要側 数十以下"
+    ],
+    datasets: [{
+      label: "ユーザー検索で見えた層のフォロワー帯",
+      data: [156774, 31495, 5414, 1243, 48],
+      backgroundColor: ["#d4a574", "#e8c4a8", "#7dba8e", "#8a3b46", "#7d6b66"]
+    }]
+  },
+  options: {
+    indexAxis: "y",
+    plugins: {
+      legend: { display: false },
+      title: {
+        display: true,
+        text: "各層の代表垢フォロワー（2026-08-19）",
+        color: "#eadfd9"
+      }
+    },
+    scales: {
+      x: {
+        beginAtZero: true,
+        ticks: { callback: (v) => v >= 10000 ? (v / 10000) + "万" : v }
+      }
+    }
+  }
+});
+
 new Chart(document.getElementById("chartSurface"), {
   type: "doughnut",
   data: {

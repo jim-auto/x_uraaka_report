@@ -17,6 +17,7 @@
       <nav class="nav">
         <a href="#define">定義</a>
         <a href="#observe">X観測</a>
+        <a href="#users">ユーザー</a>
         <a href="#map">生態系</a>
         <a href="#players">分類</a>
         <a href="#surface">表層</a>
@@ -49,7 +50,7 @@
           <div class="stat"><b>約13%</b><span>2022年時点、X投稿のアダルト比率（旧Twitter内部文書）</span></div>
           <div class="stat"><b>2024.6</b><span>合意に基づく成人向け投稿を公式に許容</span></div>
           <div class="stat"><b>ほぼ全部</b><span>2026-08-19、「裏垢女子」「オフパコ」最新検索の表層は量産垢</span></div>
-          <div class="stat"><b>英語名+数字</b><span>量産垢ハンドルの定型。表示名は「名前＋県＋市」</span></div>
+          <div class="stat"><b>20分</b><span>2020-08-25、県の違う「別人」3垢が連続作成</span></div>
         </div>
       </aside>
     </section>
@@ -232,8 +233,166 @@
       </div>
     </section>
 
+    <section id="users">
+      <h2>3. ユーザーを引く</h2>
+      <p>
+        投稿検索の次に、ユーザー検索で名前・bio・フォロワーを見た。
+        「裏垢女子」で人を探すと、Latest とは別の層が出る。
+        検索は工場、ユーザー検索はハブと販売垢が上に来る。
+      </p>
+
+      <div class="grid-2">
+        <div class="chart-box">
+          <canvas id="chartUsers"></canvas>
+        </div>
+        <article class="card">
+          <div class="tag">ユーザー検索の見え方</div>
+          <h3>同じ言葉でも、索引が違う</h3>
+          <p>
+            「裏垢女子」のユーザー検索上位は、フォロワー2万〜15万の販売垢と図鑑である。
+            「セフレ募集 裏アカ女子」「秘密垢」で引くと、フォロワー300〜2,000の量産垢が並ぶ。
+            「人妻裏垢」は、フォロワー1,000〜5,000の日記型が残る。
+          </p>
+          <p class="small">2026-08-19 の X ユーザー検索。フォロワー数は同日時点。</p>
+        </article>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>層</th>
+              <th>フォロワー</th>
+              <th>今日見えた例</th>
+              <th>何をしているか</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ハメ撮り販売の裏垢男子</td>
+              <td>3万〜15万</td>
+              <td>@ryotaroojisan（156,774、青バッジ）。類似名の @lovegrils1919（97,424）</td>
+              <td>フォームで素人を集め、切り抜きをX、フルをmyfans。今日もリプが生きている</td>
+            </tr>
+            <tr>
+              <td>露出・ギフトの裏垢女子</td>
+              <td>4万〜6万</td>
+              <td>@_mmmmm_sn（58,955、myfans）。@IcupAimero（41,828、アマギフ）</td>
+              <td>画像で集客し、外部課金。会う話よりファン化</td>
+            </tr>
+            <tr>
+              <td>図鑑・クラブ</td>
+              <td>4千〜3万</td>
+              <td>@secret_girls_db（4,017、蒐集1,588人、2016年開設）。@mochimochi_day0（23,370）。@ahmo_no_heya（31,495）</td>
+              <td>「愛知のGカップを新規掲載」と県・カップだけを流す索引。本人ではない</td>
+            </tr>
+            <tr>
+              <td>日記型の人妻裏垢</td>
+              <td>1千〜5千</td>
+              <td>@YRR2525san（5,414）。@KRPY_m（3,048、オフパコしないと明記）</td>
+              <td>子供の体調、アイス、微エロ。Fantiaへ抜けることもある。投稿に日常がある</td>
+            </tr>
+            <tr>
+              <td>凍結で番号が進む日記</td>
+              <td>1千前後</td>
+              <td>人妻裏垢日記② @sumomomomo8706 → ④ @4sumomo8706。「③は凍結」</td>
+              <td>同じ関係を、落ちた垢の続きとして建て直す</td>
+            </tr>
+            <tr>
+              <td>県名付き量産垢</td>
+              <td>300〜2,200</td>
+              <td>@Jennife97401950 ほか。ハンドルが Jennifer / Andrea / Jessie / Emily / Cindy / Brian / Kevin ＋数字</td>
+              <td>発情文を低表示で打ち続ける。検索汚染用</td>
+            </tr>
+            <tr>
+              <td>ほぼ無人の需要側</td>
+              <td>数人〜数十</td>
+              <td>@touma_love00（2）。オナ専を名乗る小規模垢</td>
+              <td>bioだけ長く、投稿が届かない</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>量産垢は、同じ20分で別人になっている</h3>
+      <p>
+        ユーザーIDは作成時刻を含む。
+        「セフレ募集 裏アカ女子」で出た3垢は、2020年8月25日 14:47 / 14:54 / 15:07 UTC に連続して作られていた。
+        表示上は福島、石川、兵庫の別人である。
+      </p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>作成（UTC）</th>
+              <th>表示上の土地</th>
+              <th>ハンドル</th>
+              <th>フォロワー</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2020-08-25 14:47</td>
+              <td>福島</td>
+              <td>Andrea ＋数字</td>
+              <td>1,053</td>
+            </tr>
+            <tr>
+              <td>2020-08-25 14:54</td>
+              <td>石川・金沢</td>
+              <td>Jennife ＋数字</td>
+              <td>1,243</td>
+            </tr>
+            <tr>
+              <td>2020-08-25 15:07</td>
+              <td>兵庫・西宮</td>
+              <td>Jessie ＋数字</td>
+              <td>1,122</td>
+            </tr>
+            <tr>
+              <td>2020-09-05 10:17</td>
+              <td>沖縄・那覇</td>
+              <td>Jennife ＋別数字</td>
+              <td>1,003</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        フォロワーも 1,003〜1,243 に固まっている。11日後の沖縄垢も同じ Jennife 接頭辞である。
+        2022年9月14〜20日にも、Cindy / Emily / Brian ハンドルが3件、同じ週に立っている。
+        人のアカウント開設ではなく、バッチである。
+      </p>
+
+      <h3>投稿の中身が、層を分ける</h3>
+      <div class="grid-3">
+        <article class="card">
+          <div class="tag">日記型</div>
+          <h3>日常が先、エロが後</h3>
+          <p>@YRR2525san（2024-09）「子供がなんとなく体調不良」「朝から奉仕作業してきました。今からアイス」。表示 5,000〜9,000。Fantiaリンクは末尾。</p>
+        </article>
+        <article class="card">
+          <div class="tag">販売型</div>
+          <h3>関係が商品</h3>
+          <p>@ryotaroojisan は今日も生きている。bioはプレイ内容とmyfans。リプは「本人降臨」「一時誰とでも会ってた子」。Xは店の看板。</p>
+        </article>
+        <article class="card">
+          <div class="tag">量産型</div>
+          <h3>本文に土地がない</h3>
+          <p>@Jennife97401950 の直近は「一人暮らししたい」「ギャップ萌え」「誰か一緒に…行こう」。いいね0、表示6〜58。金沢と書いてあるのに、金沢の話がない。</p>
+        </article>
+      </div>
+
+      <div class="callout">
+        ユーザー検索で上に来る「裏垢女子」は、素人の隠れた本音垢ではない。
+        長く生き残った販売垢と、1,588件を蒐集する図鑑である。
+        県名とセフレを名乗る垢は、作成時刻が固まっている。
+        日記型は数が少なく、凍結のたびに②③④と番号が進む。
+      </div>
+    </section>
+
     <section id="map">
-      <h2>3. 生態系</h2>
+      <h2>4. 生態系</h2>
       <p>
         裏垢圏はマッチングアプリというより、ポルノ消費、承認経済、アフィリエイト、実在の欲求が重なったグレー市場である。
         下図は、本垢から切り離されたあとに何が起きているかの見取り図だ。
@@ -279,7 +438,7 @@
     </section>
 
     <section id="players">
-      <h2>4. 誰がいるか</h2>
+      <h2>5. 誰がいるか</h2>
       <p>
         アカウント名に「裏垢」と書いてあるだけでは、同じ種類ではない。
         現場では少なくとも次の役者が同時に動いている。
@@ -365,7 +524,7 @@
     </section>
 
     <section id="surface">
-      <h2>5. 検索に出る裏垢は、裏垢圏そのものではない</h2>
+      <h2>6. 検索に出る裏垢は、裏垢圏そのものではない</h2>
       <p>
         2026年8月19日の Latest 検索は、この誤読を実物で見せてくれた。
         「#オフパコ」「裏垢女子」で出てくる列は市場の全体ではなく、キーワードを先取りした工場の列である。
@@ -402,7 +561,7 @@
     </section>
 
     <section>
-      <h2>6. なぜXなのか</h2>
+      <h2>7. なぜXなのか</h2>
       <div class="grid-3">
         <article class="card">
           <div class="tag">匿名</div>
@@ -428,7 +587,7 @@
     </section>
 
     <section id="platform">
-      <h2>7. プラットフォームは「置いてよい、広げない」</h2>
+      <h2>8. プラットフォームは「置いてよい、広げない」</h2>
       <p>
         旧Twitter時代、アダルトは黙認に近かった。ロイターが報じた内部文書では、2022年時点で投稿の約13%にアダルトが含まれていた。
         2024年6月、Xは成人向けコンテンツ政策を明示し、<strong>合意に基づく成人の性的コンテンツ</strong>をラベル付きで認めると発表した。
@@ -465,7 +624,7 @@
     </section>
 
     <section id="risk">
-      <h2>8. リスク</h2>
+      <h2>9. リスク</h2>
       <div class="risk">
         <article class="card">
           <strong>身バレ</strong>
@@ -518,7 +677,7 @@
     </section>
 
     <section>
-      <h2>9. いま起きていること</h2>
+      <h2>10. いま起きていること</h2>
       <div class="table-wrap">
         <table>
           <thead>
@@ -561,14 +720,14 @@
     </section>
 
     <section>
-      <h2>10. 要約</h2>
+      <h2>11. 要約</h2>
       <div class="grid-2">
         <article class="card">
           <h3>言えること</h3>
           <p>
             Xの裏垢は、日本語圏ではアダルト用途の隠語として定着している。
-            2026年8月19日の検索 Latest は、人が話している場所ではなく量産垢の広告枠だった。
-            最大の用途は出会いではなく、性的タイムラインと、そこから伸びるnote／アフィである。
+            投稿検索の Latest は量産垢、ユーザー検索の上位は販売垢と図鑑である。
+            日記型はフォロワー数千で、凍結のたびに番号が進む。量産垢は同じ20分で「別人」になる。
           </p>
         </article>
         <article class="card">
@@ -605,6 +764,10 @@
         <li>X @kinbaku9aoi, 2026-08-15. エロ用語でBAN候補、古株の過激垢は生き残る</li>
         <li>X @kottkioy9, 2026-08-19. 裏垢作成直後、投稿ゼロで凍結。プロフの🔞</li>
         <li>X @aya__mitee, 2026-04-11. 凍結祭り、該当動画削除で解除。7,022表示</li>
+        <li>X ユーザー検索, 2026-08-19. 「裏垢女子」「裏垢男子」「人妻裏垢」「セフレ募集 裏アカ女子」「秘密垢」。</li>
+        <li>X @ryotaroojisan フォロワー156,774。@lovegrils1919 97,424。@_mmmmm_sn 58,955。@IcupAimero 41,828。</li>
+        <li>X @secret_girls_db 蒐集1,588人（2016-08開設）。@YRR2525san 5,414。人妻裏垢日記②→④の凍結連鎖。</li>
+        <li>Snowflake: 2020-08-25 14:47–15:07 UTC に Andrea / Jennife / Jessie ハンドルが3件連続作成。フォロワー1,003–1,243。</li>
         <li>X コミュニティ誘導投稿群, 2026-07-20前後. 同一 community id へ英語名ハンドルが連投</li>
       </ul>
       <p class="footnote">
