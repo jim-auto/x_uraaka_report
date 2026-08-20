@@ -319,6 +319,37 @@ footer {
   color: #e8c4a8;
 }
 .av svg { width: 22px; height: 22px; }
+.av img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 12px;
+  margin: 16px 0;
+}
+.icon-item {
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px;
+  text-align: center;
+}
+.icon-item img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 8px;
+  display: block;
+  border: 2px solid var(--line);
+}
+.icon-item b { display: block; font-size: 13px; }
+.icon-item span { font-size: 11px; color: var(--dim); font-family: var(--mono); }
 .av.gold { background: linear-gradient(160deg, #c4a078, #5a4030); }
 .av.green { background: linear-gradient(160deg, #4a6a52, #1c2820); }
 .av.gray { background: linear-gradient(160deg, #4a4444, #242020); }
